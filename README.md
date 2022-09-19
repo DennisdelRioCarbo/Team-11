@@ -10,8 +10,8 @@ A number of factors, individually or in combination, can lead to heart disease, 
 Men are generally more likely to develop heart disease. An increasing number of women are experiencing heart disease but they are under-diagnosed. For both sexes, the risk of heart disease increases with age.
 
 ## Description of source data
-The sourced data comes from Kaggle and it was originally sourced from the CDC's 2020 Behavioral Risk Factor Surveillance System (BRFSS) which is the nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health_related risk behaviors, chronic health conditions, and use of preventive services.
-The original dataset contained nearly 300 variables and was reduced to just about 20 variablesand was transformed into a csv file from SAS file.
+The sourced data comes from Kaggle and it was originally sourced from the CDC's 2020 Behavioral Risk Factor Surveillance System (BRFSS) which is the nation's premier system of health-related telephone surveys that collect state data about U.S. residents regarding their health related risk behaviors, chronic health conditions, and use of preventive services.
+The original dataset contained nearly 300 variables and was reduced to just about 20 variables and was transformed into a csv file from SAS file.
 The features included in this dataset are:
 
 - *Heart Disease* (Yes/No) Respondents that have ever reported having coronary heart disease or myocardial infarction.
@@ -42,7 +42,7 @@ https://www.cdc.gov/brfss/annual_data/annual_2020.html
 
 ## Questions hoped to be answered with the data
 
-- Can we predict if someone has or is at riks of getting  heart disease given personal key indicators?
+- Can we predict if someone has or is at risk of getting  heart disease given personal key indicators?
 - Is there a prevalence in race for heart disease based on personal risk factors?
 - What are the relationships or patterns between the different risk factors?
 - How can we group individuals based on personal risk factors?
