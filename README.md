@@ -38,6 +38,6 @@ The database to store data during the project is postgrSQL on AWS web service.
 
 ### Test the Connection
 
-![](Images/)
+![testConnection.png](Images/testConnection.png)
 
 
