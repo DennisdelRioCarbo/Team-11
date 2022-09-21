@@ -18,9 +18,13 @@ The database to store data during the project is postgrSQL on AWS web service.
 - Been tested using Spark on Google Colab.
 - Connect to RDS PostgreSQL Database : <br/> conn = sa.create_engine('postgresql://root:postgres@dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject')
 
-### Read Data into Google Colab
+### Read the Data
 
 ![readData.png](Images/readData.png)
+
+### Clean the Data
+
+![cleanData.png](Images/cleanData.png)
 
 
 ### Connect to the RDS Databse
