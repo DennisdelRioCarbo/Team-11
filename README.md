@@ -27,6 +27,11 @@ The database to store data during the project is postgrSQL on AWS web service.
 ![cleanData.png](Images/cleanData.png)
 
 
+### Copy the cleaned data into a table on Postgres
+
+![copytoPostgres.png](Images/copytoPostgres.png)
+
+
 ### Connect to the RDS Databse
 
 ![rdsConnect.png](Images/rdsConnect.png)
