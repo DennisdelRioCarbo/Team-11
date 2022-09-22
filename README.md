@@ -7,7 +7,7 @@ The database to store data during the project is postgrSQL on AWS web service.
 
 - Data in .csv format:&nbsp; [heart_2020_cleaned.csv](heart_2020_cleaned.csv)
 - Database Link on AWS:&nbsp; [postgreSQL Database](dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com) 
-- Data Link on AWS:&nbsp; [Data.csv](https://classprojectdata.s3.amazonaws.com/data.csv)
+- Data Link on AWS:&nbsp; [csv file](https://classprojectdata.s3.amazonaws.com/framingham.csv)
 - RDS Link for Spark:&nbsp;  jdbc:postgresql://dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject
 
 
