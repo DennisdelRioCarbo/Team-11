@@ -2,5 +2,5 @@
 
 ## EDA
 
-This branch contains basic EDA in google colab with connections to the postgresql database and exploration of the *framingham.csv* dataset.
+This branch contains cleaning and  EDA of the *framingham.csv* dataset in jupyter notebook with connections to the postgresql database.
 
