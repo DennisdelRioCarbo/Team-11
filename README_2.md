@@ -65,9 +65,10 @@ The features included in this dataset are:
 The dataset can be found here:
 https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resource=download
 
-## Questions hoped to be answered with the data
+## Expected Outcome
 
-- Can we predict if someone  is at risk of getting  heart disease given personal key indicators within 10 years?
+- Predictin of an individual developing heart disease within next 10 years based on the personal health and lifestyle information.
+- The prediction will help the medical professionals identifying the preventative measures to reduce the risk and educating patients on the risk if adequate care is not employed.
 
 ## Communication Protocol
 - Slack Channel for Team 11
