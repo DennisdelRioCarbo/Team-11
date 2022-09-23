@@ -34,9 +34,10 @@ The features included in this dataset are:
 The dataset can be found here:
 https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resource=download
 
-## Questions hoped to be answered with the data
+## Expected Outcome
 
-- Can we predict if someone  is at risk of getting  heart disease given personal key indicators within 10 years?
+- Prediction of an individual developing heart disease within next 10 years based on the personal health and lifestyle information.
+- The prediction will help the medical professionals identifying the preventative measures to reduce the risk and educating patients on the risk if adequate care is not employed.
 
 ## Communication Protocol
 - Slack Channel for Team 11
@@ -49,4 +50,11 @@ Data cleaning is an essential step as it will dictate the flow of the entire pro
 ## Database Storage
 The database was created on AWS and then linked to postgresSQL, which is the database we intend to use. The data was tested using Spark on Google Colab. In the branch called “laleh”, there are links to where the data has been stored and points on the work process. There are also screenshots of the data being read using various dependencies and of the data being cleaned. The data cleaning included changing a column from “male” to “sex”, to make the data in that column clearer, also ensuring that there is no duplicates and dropping any null values. 
 ## Machine Learning
-The machine learning algorithm that works best for the dataset we are planning to use for this project would be supervised machine learning, and we have a target variable present in the dataset. It is ideal as we would like our dataset to predict whether the patients would be at risk of having coronary heart disease in the next 10 years. We will map out a decision tree diagram to help us decide on the variables we will be using in order to successfully predict the outcomes.  
+
+### Which model did you choose and why?
+
+The purpose of our capstone project is to determine whether the patients would be at risk of having Coronary Heart Disease (CHD) in the next 10 years based on the current lifestyle and health information. The outcome of the project is labeled as whether the person will or will not have a risk of having CHD. Moreover, we have a dataset that we can use to train the model to analyze data and identify the patterns and based on the patterns, make prediction on new data. As a result, we will be using the Supervised Machine Learning category. 
+
+Based on the learning, Supervised Machine Learning can be further divided into Regression and Classification models. Since outcome of this work is discrete we will be utilizing the classification model and due to the fact that we are predicting the binary outcome, we will be utilizing the Logistic Regression.  
+
+For achieving the expected outcome, we will be utilizing the Scikit-learn machine leaning library for python. We will be utilizing multiple modules from Scikit-learn library which will be finalized during the course of this project. 
