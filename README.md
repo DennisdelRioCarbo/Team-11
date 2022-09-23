@@ -1,3 +1,6 @@
 # Team-11
 
-This branch contains two  datasets in csv files.
+## EDA
+
+This branch contains cleaning and  EDA of the *framingham.csv* dataset in jupyter notebook with connections to the postgresql database.
+
