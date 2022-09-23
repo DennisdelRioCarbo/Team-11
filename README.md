@@ -1,5 +1,5 @@
 # Team-11
 
-**ML_draft**
-
-This branch contains a basic draft to apply supervised machine learning  using either *Logistic Regression* or *Easy Ensemble Classifier*.
+## EDA and Machined Learning 
+This branch contains cleaning and  EDA of the *framingham.csv* dataset in jupyter notebook with connections to the postgresql database and a file
+using supervised machine learning  with *Logistic Regression*.
