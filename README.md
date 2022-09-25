@@ -59,7 +59,7 @@ For achieving the expected outcome, we will be utilizing the Scikit-learn machin
 
 
 ## Work Flow
-## 1. Database
+## 1. Data and Database
 <br>
 
 - Data in .csv format:&nbsp; [framingham.csv](framingham.csv)
@@ -68,8 +68,6 @@ For achieving the expected outcome, we will be utilizing the Scikit-learn machin
 - RDS Link for Spark:&nbsp;  jdbc:postgresql://dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject
 - Database connection for Python: <br/> conn = sa.create_engine('postgresql://root:postgres@dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject')
 
-
-## Work Flow
 ### In AWS
 - __Create AWS RDS__
 - __Connect database to postgreSQL__
