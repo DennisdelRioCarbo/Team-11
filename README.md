@@ -29,9 +29,7 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
   <br/>
   
   ![step4.png](Images/step4.png)
-  
   <br/>
-  
 - __Import CSV files__
 
   <br/>
