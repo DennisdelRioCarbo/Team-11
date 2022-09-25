@@ -19,7 +19,7 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 ### In AWS
 - __Create AWS RDS__
 - __Connect database to postgreSQL__
-- __Create temp tables__
+- __Create temp tables__ <br/>
   to avoid errors while importing data, we should make temp tables with only varchar data type for each field
   <br/>
   ![step3.png](Images/step3.png)
