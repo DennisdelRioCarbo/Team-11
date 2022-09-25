@@ -28,32 +28,38 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 - __Create final tables with appropriate data types__
 
   <br/>
+  
   ![step4.png](Images/step4.png)
   <br/>
   
 - __Import CSV files__
 
   <br/>
+  
   ![step4_2.png](Images/step4_2.png)
   <br/>
   
 - __Check data imported properly__
 
   <br/>
+  
   ![step5.png](Images/step5.png)
   <br/>
   
 - __Clean and normalize data and copy into final table__
 
   <br/>
+  
   ![step6_1.png](Images/step6_1.png)
   <br/>
+  
   ![step6_2.png](Images/step6_2.png)
   <br/>
   
 - __Join two tables and copy into a postgres view__
 
   <br/>
+  
   ![step8.png](Images/step8.png)
   <br/>
   
@@ -62,12 +68,14 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 - __Read data in Jupyter Notebook and make a DataFrame__
 
   <br/>
+  
   ![step9.png](Images/step9.png)
   <br/>
   
 - __Remove records with null value in the fields__
 
   <br/>
+  
   ![step10_1.png](Images/step10_1)
   ![step10_2.png](Images/step10_2)
   <br/>
@@ -75,12 +83,14 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 - __Copy cleaned data into framingham table on AWS database__
 
   <br/>
+  
   ![step11.png](Images/step12.png)
   <br/>
   
 - __Check the data in table__
 
   <br/>
+  
   ![step12.png](Images/step12.png)
   <br/>
   
