@@ -25,7 +25,7 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
   ![step3.png](Images/step3.png)
   <br/>
 - __Create final tables with appropriate data types__
-- 
+
   <br/>
   
   ![step4.png](Images/step4.png)
