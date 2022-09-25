@@ -18,52 +18,89 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 ## Work Flow
 ### In AWS
 - __Create AWS RDS__
-- Connect database to postgreSQL
-- Create temp tables
-  to avoid errors and import data with ease, we should make temp tables with only varchar data type for each field
+- __Connect database to postgreSQL__
+- __Create temp tables__
+  to avoid errors while importing data, we should make temp tables with only varchar data type for each field
   <br/>
   ![step3.png](Images/step3.png)
   <br/>
-- Create final tables with appropriate data types
+- __Create final tables with appropriate data types__
+- 
   <br/>
+  
   ![step4.png](Images/step4.png)
+  
   <br/>
-- Import CSV files
+  
+- __Import CSV files__
+
   <br/>
+  
   ![step4_2.png](Images/step4_2.png)
+  
   <br/>
+  
 - Check data imported properly
+
   <br/>
+  
   ![step5.png](Images/step5.png)
+  
   <br/>
-- Clean and normalize data and copy into final table
+  
+- __Clean and normalize data and copy into final table__
+
   <br/>
+  
   ![step6_1.png](Images/step6_1.png)
+  
   <br/>
+  
   ![step6_2.png](Images/step6_2.png)
+  
   <br/>
-- Join two tables and copy into a postgres view
+  
+- __Join two tables and copy into a postgres view__
+
   <br/>
+  
   ![step8.png](Images/step8.png)
+  
   <br/>
+  
 ### in Python
 
-- Read data in Jupyter Notebook and make a DataFrame
+- __Read data in Jupyter Notebook and make a DataFrame__
+
   <br/>
+  
   ![step9.png](Images/step9.png)
+  
   <br/>
-- Remove records with null value in the fields
+  
+- __Remove records with null value in the fields__
+
   <br/>
+  
   ![step10_1.png](Images/step10_1)
   ![step10_2.png](Images/step10_2)
+  
   <br/>
-- Copy cleaned data into framingham table on AWS database
+  
+- __Copy cleaned data into framingham table on AWS database__
+
   <br/>
+  
   ![step11.png](Images/step12.png)
+  
   <br/>
-- Check the data in table
+  
+- __Check the data in table__
+
   <br/>
+  
   ![step12.png](Images/step12.png)
+  
   <br/>
   
 
