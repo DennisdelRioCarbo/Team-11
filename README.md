@@ -17,7 +17,7 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 
 ## Work Flow
 ### In AWS
-- Create AWS RDS
+- __Create AWS RDS__
 - Connect database to postgreSQL
 - Create temp tables
   to avoid errors and import data with ease, we should make temp tables with only varchar data type for each field
