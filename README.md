@@ -68,9 +68,8 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
   
 - __Remove records with null value in the fields__
   
-  ![step10_1.png](Images/step10_1)
+  ![step10_1.png](Images/step10_1.png)
   
-  ![step10_2.png](Images/step10_2)
   <br/>
   
 - __Copy cleaned data into framingham table on AWS database__
