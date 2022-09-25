@@ -12,35 +12,61 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 - Database Link on AWS:&nbsp; [postgreSQL Database](dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com) 
 - Data Link on AWS:&nbsp; [csv file](https://classprojectdata.s3.amazonaws.com/framingham.csv)
 - RDS Link for Spark:&nbsp;  jdbc:postgresql://dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject
+- Database connection for Python: <br/> conn = sa.create_engine('postgresql://root:postgres@dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject')
 
 
-## Work Process
+## Work Flow
+### In AWS
+- Create AWS RDS
+- Connect database to postgreSQL
+- Create temp tables
+  to avoid errors and import data with ease, we should make temp tables with only varchar data type for each field
+  <br/>
+  ![step3.png](Images/step3.png)
+  <br/>
+- Create final tables with appropriate data types
+  <br/>
+  ![step4.png](Images/step4.png)
+  <br/>
+- Import CSV files
+  <br/>
+  ![step4_2.png](Images/step4_2.png)
+  <br/>
+- Check data imported properly
+  <br/>
+  ![step5.png](Images/step5.png)
+  <br/>
+- Clean and normalize data and copy into final table
+  <br/>
+  ![step6_1.png](Images/step6_1.png)
+  <br/>
+  ![step6_2.png](Images/step6_2.png)
+  <br/>
+- Join two tables and copy into a postgres view
+  <br/>
+  ![step8.png](Images/step8.png)
+  <br/>
+### in Python
 
-- Database has been created on AWS
-- Succesfully linked to the postgreSQL database server, and 
-- Been tested using Spark on Google Colab and Panadas library.
-- Connect to RDS PostgreSQL Database : <br/> conn = sa.create_engine('postgresql://root:postgres@dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject')
+- Read data in Jupyter Notebook and make a DataFrame
+  <br/>
+  ![step9.png](Images/step9.png)
+  <br/>
+- Remove records with null value in the fields
+  <br/>
+  ![step10_1.png](Images/step10_1)
+  ![step10_2.png](Images/step10_2)
+  <br/>
+- Copy cleaned data into framingham table on AWS database
+  <br/>
+  ![step11.png](Images/step12.png)
+  <br/>
+- Check the data in table
+  <br/>
+  ![step12.png](Images/step12.png)
+  <br/>
+  
 
-### Read the Data
 
-![readData.png](Images/readData.png)
-
-### Clean the Data
-
-![cleanData.png](Images/cleanData.png)
-
-
-### Copy the cleaned data into a table on Postgres
-
-![copytoPostgres.png](Images/copytoPostgres.png)
-
-
-### Connect to the RDS Databse
-
-![rdsConnect.png](Images/rdsConnect.png)
-
-### Test the Connection
-
-![testConnection.png](Images/testConnection.png)
 
 
