@@ -62,8 +62,8 @@ For achieving the expected outcome, we will be utilizing the Scikit-learn machin
 ## 1. Data and Database
 <br>
 
-- Data in csv format:&nbsp; [framingham.csv](framingham.csv)
-- Tables structure:&nbsp; [ERD](Images/ERD.png)
+- Data in csv format:&nbsp; [framingham.csv](finalFiles/framingham.csv)
+- Tables structure:&nbsp; [ERD](finalFiles/Images/ERD.png)
 - Database Link on AWS:&nbsp; [postgreSQL Database](dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com) 
 - Data Link on AWS:&nbsp; [csv file](https://classprojectdata.s3.amazonaws.com/framingham.csv)
 - RDS Link for Spark:&nbsp;  <br/> jdbc:postgresql://dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject
@@ -75,40 +75,40 @@ For achieving the expected outcome, we will be utilizing the Scikit-learn machin
 - __Create temp tables__ <br/>
   to avoid errors while importing data, we should make temp tables with only varchar data type for each field
   <br/>
-  ![step3.png](Images/step3.png)
+  ![step3.png](finalFiles/Images/step3.png)
   <br/>
   
 - __Create final tables with appropriate data types__
 
   
-  ![step4.png](Images/step4.png)
+  ![step4.png](finalFiles/Images/step4.png)
   <br/>
   
 - __Import CSV files__
 
   
-  ![step4_2.png](Images/step4_2.png)
+  ![step4_2.png](finalFiles/Images/step4_2.png)
   <br/>
   
 - __Check data imported properly__
 
   
-  ![step5.png](Images/step5.png)
+  ![step5.png](finalFiles/Images/step5.png)
   <br/>
   
 - __Clean and normalize data and copy into final table__
 
   
-  ![step6_1.png](Images/step6_1.png)
+  ![step6_1.png](finalFiles/Images/step6_1.png)
   <br/>
   
-  ![step6_2.png](Images/step6_2.png)
+  ![step6_2.png](finalFiles/Images/step6_2.png)
   <br/>
   
 - __Join two tables and copy into a postgres view__
 
   
-  ![step8.png](Images/step8.png)
+  ![step8.png](finalFiles/Images/step8.png)
   <br/>
   
 ### - in Python
@@ -116,24 +116,24 @@ For achieving the expected outcome, we will be utilizing the Scikit-learn machin
 - __Read data in Jupyter Notebook and make a DataFrame__
 
   
-  ![step9.png](Images/step9.png)
+  ![step9.png](finalFiles/Images/step9.png)
   <br/>
   
 - __Remove records with null value in the fields__
   
-  ![step10_1.png](Images/step10_1.png)
+  ![step10_1.png](finalFiles/Images/step10_1.png)
   
   <br/>
   
 - __Copy cleaned data into framingham table on AWS database__
 
   
-  ![step11.png](Images/step12.png)
+  ![step11.png](finalFiles/Images/step12.png)
   <br/>
   
 - __Check the data in table__
 
   <br/>
   
-  ![step12.png](Images/step12.png)
+  ![step12.png](finalFiles/Images/step12.png)
   <br/>
