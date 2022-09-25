@@ -63,6 +63,7 @@ For achieving the expected outcome, we will be utilizing the Scikit-learn machin
 <br>
 
 - Data in .csv format:&nbsp; [framingham.csv](framingham.csv)
+- Tables structure:&nbsp; [ERD](Images/ERD.png)
 - Database Link on AWS:&nbsp; [postgreSQL Database](dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com) 
 - Data Link on AWS:&nbsp; [csv file](https://classprojectdata.s3.amazonaws.com/framingham.csv)
 - RDS Link for Spark:&nbsp;  <br/> jdbc:postgresql://dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject
