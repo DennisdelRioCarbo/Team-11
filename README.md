@@ -67,9 +67,9 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
   <br/>
   
 - __Remove records with null value in the fields__
-
   
   ![step10_1.png](Images/step10_1)
+  
   ![step10_2.png](Images/step10_2)
   <br/>
   
