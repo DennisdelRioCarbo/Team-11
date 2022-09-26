@@ -17,7 +17,7 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 
 
 ## Work Flow
-### In AWS
+### on AWS
 - __Create AWS RDS__
 - __Connect database to postgreSQL__
 - __Create temp tables__ <br/>
