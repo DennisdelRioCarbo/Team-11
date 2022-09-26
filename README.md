@@ -69,7 +69,7 @@ For achieving the expected outcome, we will be utilizing the Scikit-learn machin
 - RDS Link for Spark:&nbsp;  <br/> jdbc:postgresql://dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject
 - Database connection for Python: <br/> conn = sa.create_engine('postgresql://root:postgres@dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject')
 
-### - In AWS
+### - on AWS
 - __Create AWS RDS__
 - __Connect database to postgreSQL__
 - __Create temp tables__ <br/>
