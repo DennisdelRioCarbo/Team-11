@@ -64,11 +64,11 @@ For achieving the expected outcome, we will be utilizing the Scikit-learn machin
 ## Dashboard 
 
 ## Data exploration.
-
+The data was imported from the database and displayed as a DataFrame using Pandas.The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphycally how the data in the different columns is distributed, and performed basic statistic exploration with pandas .describe() method. We also  explored correlations and relationships  between the different features graphycally. 
+Refer to **framingham_eda.ipynb file** for code and graphs. 
+  
 ## Data analysis
-The data was imported from the database and displayed as a DataFrame using Pandas. We explored the column names and data types. The data cleaning included changing a column from “male” to “sex”, to make the data in that column clearer, also ensuring that there are no duplicates and dropping any null values. We then proceeded to explore how the data is distributed, performed basic statistic analysis, explored correlations and relationships  between the different features. 
-Refer to **framingham_eda.ipynb file** for code and graphs. Some of the initial findings are the following: 
-- The dataset contained 3,658 rows and 16 columns. 
+After exploring and performing an initial analysis of the data, some of the findings are the following: 
 - **Age** The age of the individuals in the dataset ranges between 32 and 70 years old. With only one participant being 32 and one participant being 70 years old. Most participants are between 40 and 59 years old. The mean age is 49.5 years old.
 - **Sex** The dataset seems to be equally distributed among men and women. Out of the 3,658 participants there is a slight majority of women with 2,035 (55.6%) participants and 1,623 (44.4%) of men participants.
 - **Distribution** Most continuous variables seem to show a normal distribution.  Total cholesterol (totChol), systolic blood pressure (sysBP), body mass index (BMI), heart rate (hearRate) and glucose (glucose) seem to present outliers.
