@@ -77,7 +77,7 @@ After exploring and performing an initial analysis of the data, some of the find
 The risk of developing CHD within ten years is higher in people over 50 years old of both ages.
 - **Smoking (currentSmoker/cigsPerDay)** Of all 3,658 participants almost half of them (1,789 or 48.9%) are smokers against 1,869 (51.1%) of non smokers.
 There is a higher prevalence of smokers amongst men. Most smokers smoke around 20 cigarettes a day (1 pack).
-- ** Body Mass Index (BMI)** The body mass index seem to show a normal distribution with some of the outliers of higher values belonging to women.
+- **Body Mass Index (BMI)** The body mass index seem to show a normal distribution with some of the outliers of higher values belonging to women.
 Participants of both sexes who are predicted (1) to develop CHD within ten years present higher body mass index values.
 - **Systolic Blood Pressure (sysBP)** Not all participants who are predicted (1) to develop CHD present high systolic blood pressures and neither do all participants who smoke present higher blood pressure.
 - **Total Cholesterol (totChol)** Participants who are at risk of developing CHD do not seem to present higher levels of cholesterol than those who do not.
