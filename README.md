@@ -139,9 +139,9 @@ There is more prevalent hypertension amongst participants at risk of developing 
 
   
   ![joinTables.png](finalFiles/Images/joinTables.png)
-  <br/>
-
 <br/>
+<br/>
+
 ### in Python
 
 - __Read data in Jupyter Notebook and make a DataFrame__
