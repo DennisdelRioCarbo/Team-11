@@ -105,40 +105,40 @@ There is more prevalent hypertension amongst participants at risk of developing 
 - __Connect database to postgreSQL__
 - __Create temp tables__ <br/>
   to avoid errors while importing data, we should make temp tables with only varchar data type for each field
-  ![tempTable.png](Images/tempTable.png)
+  ![tempTable.png](finalFiles/Images/tempTable.png)
   <br/>
   
 - __Create final tables with appropriate data types__
 
   
-  ![mainTable.png](Images/mainTable.png)
+  ![mainTable.png](finalFiles/Images/mainTable.png)
   <br/>
   
 - __Import CSV files__
 
   
-  ![importCSV2.png](Images/importCSV2.png)
+  ![importCSV2.png](finalFiles/Images/importCSV2.png)
   <br/>
   
 - __Check data imported properly__
 
   
-  ![checkPostgresData.png](Images/checkPostgresData.png)
+  ![checkPostgresData.png](finalFiles/Images/checkPostgresData.png)
   <br/>
   
 - __Clean and normalize data and copy into final table__
 
   
-  ![normalizeData1.png](Images/normalizeData1.png)
+  ![normalizeData1.png](finalFiles/Images/normalizeData1.png)
   <br/>
   
-  ![normalizeData2.png](Images/normalizeData2.png)
+  ![normalizeData2.png](finalFiles/Images/normalizeData2.png)
   <br/>
   
 - __Join two tables and copy into a postgres view__
 
   
-  ![joinTables.png](Images/joinTables.png)
+  ![joinTables.png](finalFiles/Images/joinTables.png)
   <br/>
   
 ### in Python
@@ -146,24 +146,24 @@ There is more prevalent hypertension amongst participants at risk of developing 
 - __Read data in Jupyter Notebook and make a DataFrame__
 
   
-  ![fromAWS.png](Images/fromAWS.png)
+  ![fromAWS.png](finalFiles/Images/fromAWS.png)
   <br/>
   
 - __Remove records with null value in the fields__
   
-  ![removeNulls.png](Images/removeNulls.png)
+  ![removeNulls.png](finalFiles/Images/removeNulls.png)
   
   <br/>
   
 - __Copy cleaned data into framingham table on AWS database__
 
   
-  ![toAWS.png](Images/toAWS.png)
+  ![toAWS.png](finalFiles/Images/toAWS.png)
   <br/>
   
 - __Check the data in table__
 
   <br/>
   
-  ![checkDataTable.png](Images/checkDataTable.png)
+  ![checkDataTable.png](finalFiles/Images/checkDataTable.png)
   <br/>
