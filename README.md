@@ -105,66 +105,65 @@ There is more prevalent hypertension amongst participants at risk of developing 
 - __Connect database to postgreSQL__
 - __Create temp tables__ <br/>
   to avoid errors while importing data, we should make temp tables with only varchar data type for each field
-  <br/>
-  ![step3.png](finalFiles/Images/step3.png)
+  ![tempTable.png](Images/tempTable.png)
   <br/>
   
 - __Create final tables with appropriate data types__
 
   
-  ![step4.png](finalFiles/Images/step4.png)
+  ![mainTable.png](Images/mainTable.png)
   <br/>
   
 - __Import CSV files__
 
   
-  ![step4_2.png](finalFiles/Images/step4_2.png)
+  ![importCSV2.png](Images/importCSV2.png)
   <br/>
   
 - __Check data imported properly__
 
   
-  ![step5.png](finalFiles/Images/step5.png)
+  ![checkPostgresData.png](Images/checkPostgresData.png)
   <br/>
   
 - __Clean and normalize data and copy into final table__
 
   
-  ![step6_1.png](finalFiles/Images/step6_1.png)
+  ![normalizeData1.png](Images/normalizeData1.png)
   <br/>
   
-  ![step6_2.png](finalFiles/Images/step6_2.png)
+  ![normalizeData2.png](Images/normalizeData2.png)
   <br/>
   
 - __Join two tables and copy into a postgres view__
 
   
-  ![step8.png](finalFiles/Images/step8.png)
+  ![joinTables.png](Images/joinTables.png)
   <br/>
   
-### - in Python
+### in Python
 
 - __Read data in Jupyter Notebook and make a DataFrame__
 
   
-  ![step9.png](finalFiles/Images/step9.png)
+  ![fromAWS.png](Images/fromAWS.png)
   <br/>
   
 - __Remove records with null value in the fields__
   
-  ![step10_1.png](finalFiles/Images/step10_1.png)
+  ![removeNulls.png](Images/removeNulls.png)
   
   <br/>
   
 - __Copy cleaned data into framingham table on AWS database__
 
   
-  ![step11.png](finalFiles/Images/step12.png)
+  ![toAWS.png](Images/toAWS.png)
   <br/>
   
 - __Check the data in table__
 
   <br/>
   
-  ![step12.png](finalFiles/Images/step12.png)
+  ![checkDataTable.png](Images/checkDataTable.png)
   <br/>
