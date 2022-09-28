@@ -156,7 +156,7 @@ There is more prevalent hypertension amongst participants at risk of developing 
   
   <br/>
   
-- __Copy cleaned data into framingham table on AWS database__
+- __Copy cleaned data into fragmingham table on AWS database__
 
   
   ![toAWS.png](finalFiles/Images/toAWS.png)
