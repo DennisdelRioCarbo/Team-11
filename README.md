@@ -29,34 +29,34 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 - __Create final tables with appropriate data types__
 
   
-  ![step4.png](Images/step4.png)
+  ![mainTable.png](Images/mainTable.png)
   <br/>
   
 - __Import CSV files__
 
   
-  ![step4_2.png](Images/step4_2.png)
+  ![importCSV2.png](Images/importCSV2.png)
   <br/>
   
 - __Check data imported properly__
 
   
-  ![step5.png](Images/step5.png)
+  ![checkPostgresData.png](Images/checkPostgresData.png)
   <br/>
   
 - __Clean and normalize data and copy into final table__
 
   
-  ![step6_1.png](Images/step6_1.png)
+  ![normalizeData1.png](Images/normalizeData1.png)
   <br/>
   
-  ![step6_2.png](Images/step6_2.png)
+  ![normalizeData2.png](Images/normalizeData2.png)
   <br/>
   
 - __Join two tables and copy into a postgres view__
 
   
-  ![step8.png](Images/step8.png)
+  ![joinTables.png](Images/joinTables.png)
   <br/>
   
 ### in Python
@@ -64,26 +64,26 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 - __Read data in Jupyter Notebook and make a DataFrame__
 
   
-  ![step9.png](Images/step9.png)
+  ![fromAWS.png](Images/fromAWS.png)
   <br/>
   
 - __Remove records with null value in the fields__
   
-  ![step10_1.png](Images/step10_1.png)
+  ![removeNulls.png](Images/removeNulls.png)
   
   <br/>
   
 - __Copy cleaned data into framingham table on AWS database__
 
   
-  ![step11.png](Images/step12.png)
+  ![toAWS.png](Images/toAWS.png)
   <br/>
   
 - __Check the data in table__
 
   <br/>
   
-  ![step12.png](Images/step12.png)
+  ![checkDataTable.png](Images/checkDataTable.png)
   <br/>
   
 
