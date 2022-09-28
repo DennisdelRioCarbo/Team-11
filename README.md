@@ -8,8 +8,8 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 
 <br>
 
-- Data in csv format:&nbsp; [framingham.csv](framingham.csv)
-- Cleaned data:&nbsp; [fragmingham.csv](fragmingham.csv)
+- Raw dataset:&nbsp; [framingham.csv](framingham.csv)
+- Clean dataset:&nbsp; [fragmingham.csv](fragmingham.csv)
 - Tables structure:&nbsp; [ERD](Images/ERD.png)
 - Database Link on AWS:&nbsp; [postgreSQL Database](dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com) 
 - Data Link on AWS:&nbsp; [csv file](https://classprojectdata.s3.amazonaws.com/framingham.csv)
