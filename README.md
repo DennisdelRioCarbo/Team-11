@@ -93,7 +93,8 @@ There is more prevalent hypertension amongst participants at risk of developing 
 ## 1. Data and Database
 <br>
 
-- Data in csv format:&nbsp; [framingham.csv](finalFiles/framingham.csv)
+- Raw dataset:&nbsp; [framingham.csv](finalFiles/framingham.csv)
+- Clean dataset:&nbsp; [fragmingham.csv](finalFiles/fragmingham.csv)
 - Tables structure:&nbsp; [ERD](finalFiles/Images/ERD.png)
 - Database Link on AWS:&nbsp; [postgreSQL Database](dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com) 
 - Data Link on AWS:&nbsp; [csv file](https://classprojectdata.s3.amazonaws.com/framingham.csv)
