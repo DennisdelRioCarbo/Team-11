@@ -23,7 +23,7 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
 - __Create temp tables__ <br/>
   to avoid errors while importing data, we should make temp tables with only varchar data type for each field
   <br/>
-  ![step3.png](Images/step3.png)
+  ![tempTable.png](Images/tempTable.png)
   <br/>
   
 - __Create final tables with appropriate data types__
