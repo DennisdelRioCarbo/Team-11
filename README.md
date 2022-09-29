@@ -105,7 +105,7 @@ For our dashboard and presentation we'll use *Tableu* and *Google slides*.
 
 ## Data exploration
 The data was imported from the database and displayed as a DataFrame using Pandas.The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphycally how the data in the different columns is distributed, and performed basic statistic exploration with pandas *.describe()* method. We also  explored correlations and relationships  between the different features graphycally. 
-Refer to **framingham_eda.ipynb file** for code and graphs. 
+Refer to `framingham_eda.ipynb` file for code and graphs. 
   
 ## Data analysis
 After exploring and performing an initial analysis of the data, some of the findings are the following: 
