@@ -29,3 +29,6 @@ The data was split into training and testing sets using the *scikitlearn* module
 The first Machine Learning  model we chose is *Logistic Regression* as we are trying to predict a discrete binary outcome. Logistic regression is easier to implement, interpret, and very efficient to train. It can have good accuracy for many simple data sets and it performs well when the dataset is linearly separable. Althouhg we believe *Logistic regression* might work in this case, *logistic regression* inherently runs on a linear model and there are other models available like *Naive Bayes* and *SVM* which could also prove useful.
 
 This is the first run at the data with this machined learning model. We will continue to explore and experiment with other models and compare our results to see which one works better for the problem we are trying to solve.
+
+![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
+
