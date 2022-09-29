@@ -88,6 +88,13 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
   <br/>
   
 
+## Generating Images to use in the Presentation and Dashboard
+Using [matplot](https://chartio.com/resources/tutorials/how-to-save-a-plot-to-a-file-using-matplotlib/) method &nbsp; .savefig()  we can output the chart to a file. <br/> [graphs.ipynb]()
+
+ex. &nbsp; plt.savefig('correlation_plot.png') <br/>
+
+
+
 
 
 
