@@ -1,7 +1,5 @@
 ## Framingham 10 year risk of future (CHD) coronary heart disease.
 
-
-
 ## Step One: Database
 
 The database to store data during the project is postgrSQL, a fully managed SQL relational database, deployable in the cloud and programmable via API and/or CLI. The PostgreSQL can be integrated with [Python](https://stackabuse.com/working-with-postgresql-in-python/) using [psycopg2](https://www.tutorialspoint.com/postgresql/postgresql_python.htm), [sqlAlchemy](https://docs.sqlalchemy.org/en/14/dialects/postgresql.html) and [Spark](https://spark.apache.org/docs/latest/) modules. <br/>
@@ -85,7 +83,8 @@ The database to store data during the project is postgrSQL, a fully managed SQL 
   <br/>
   
   ![checkDataTable.png](Images/checkDataTable.png)
-  <br/>
+
+<br/>
   
 
 ## Step Two: Generating Images to use in the Presentation and Dashboard
