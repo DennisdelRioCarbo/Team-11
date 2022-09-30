@@ -144,6 +144,8 @@ There is more prevalent hypertension amongst participants at risk of developing 
 - RDS Link for Spark:&nbsp;  <br/> jdbc:postgresql://dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject
 - Database connection for Python: <br/> conn = sa.create_engine('postgresql://root:postgres@dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject')
 
+finalFiles/Images/ERD.png
+
 ### - on AWS
 - __Create AWS RDS__
 - __Connect database to postgreSQL__
