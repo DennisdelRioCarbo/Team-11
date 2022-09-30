@@ -17,7 +17,7 @@ Men are generally more likely to develop heart disease. An increasing number of 
 
 ### Framingham heart study dataset
 
-The **Framingham Risk Score** is a sex-specific algorithm used to estimate the 10-year cardiovascular risk of an individual. The **"Framingham"** heart disease dataset inlcudes over 4,240 records, 16 columns and 15 attributes. The goal of the dataset is to predict whether the patient has 10-year risk of future (CHD) coronary heart disease.
+The **Framingham Risk Score** is a sex-specific algorithm used to estimate the 10-year cardiovascular risk of an individual. The **"Framingham"** heart disease dataset includes over 4,240 records, 16 columns and 15 attributes. The goal of the dataset is to predict whether the patient has 10-year risk of future (CHD) coronary heart disease.
 The features included in this dataset are:
 
 - *Sex* (0=female, 1=male)
@@ -92,14 +92,14 @@ The data was split into training and testing sets using the *scikitlearn* module
 
 
 ### Model choice
-The first Machine Learning  model we chose is *Logistic Regression* as we are trying to predict a discrete binary outcome. Logistic regression is easier to implement, interpret, and very efficient to train. It can have good accuracy for many simple data sets and it performs well when the dataset is linearly separable. Althouhg we believe *Logistic regression* might work in this case, *logistic regression* inherently runs on a linear model and there are other models available like *Naive Bayes* and *SVM* which could also prove useful.
+The first Machine Learning  model we chose is *Logistic Regression* as we are trying to predict a discrete binary outcome. Logistic regression is easier to implement, interpret, and very efficient to train. It can have good accuracy for many simple data sets and it performs well when the dataset is linearly separable. Although we believe *Logistic regression* might work in this case, *logistic regression* inherently runs on a linear model and there are other models available like *Naive Bayes* and *SVM* which could also prove useful.
 
-This is the first run at the data with this machined learning model. We will continue to explore and experiment with other models and compare our results to see which one works better for the problem we are trying to solve.
+This is the first run at the data with this machine learning model. We will continue to explore and experiment with other models and compare our results to see which one works better for the problem we are trying to solve.
 
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
 The purpose of our capstone project is to determine whether the patients would be at risk of having Coronary Heart Disease (CHD) in the next 10 years based on the current lifestyle and health information. The outcome of the project is labeled as whether the person will or will not have a risk of having CHD. Moreover, we have a dataset that we can use to train the model to analyze data and identify the patterns and based on the patterns, make prediction on new data. As a result, we will be using the Supervised Machine Learning category. 
 
-Based on the learning, Supervised Machine Learning can be further divided into Regression and Classification models. Since outcome of this work is discrete we will be utilizing the classification model and due to the fact that we are predicting the binary outcome, we will be utilizing the Logistic Regression.  
+Based on the learning, Supervised Machine Learning can be further divided into Regression and Classification models. Since outcome of this work is discrete, we will be utilizing the classification model and due to the fact that we are predicting the binary outcome, we will be utilizing the Logistic Regression.  
 
 For achieving the expected outcome, we will be utilizing the Scikit-learn machine leaning library for python. We will be utilizing multiple modules from Scikit-learn library which will be finalized during the course of this project. 
 
@@ -107,7 +107,7 @@ For achieving the expected outcome, we will be utilizing the Scikit-learn machin
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
 
 ## Data exploration
-The data was imported from the database and displayed as a DataFrame using Pandas.The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns is distributed, and performed basic statistic exploration with pandas *.describe()* method. We also  explored correlations and relationships  between the different features graphycally. 
+The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns is distributed, and performed basic statistic exploration with pandas *.describe()* method. We also explored correlations and relationships  between the different features graphically. 
 Refer to `framingham_eda.ipynb` file for code and graphs. 
   
 ## Data analysis
