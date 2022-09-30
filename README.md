@@ -65,8 +65,9 @@ The database was created on *AWS* and then linked to *postgresSQL*, which is the
 
 ## Machine Learning
 - Refer to `framingham_ml.ipynb` file for code.
+
 ### Preliminary data preprocessing
-For the data preprocessing the data was imported from the database in *AWS* and connected to *postgresql* using *sqlalchemy*. The data was checked for duplicate and null values. The null valued were dropped and there were no duplicate entries. The column 'male' was changed to 'sex' for clarity. This part of the preprocessing was done when the data was imported to the database.
+For the data preprocessing the data was imported from the database in *AWS* and connected to *postgresql* using *sqlalchemy*. The data was checked for duplicate and null values. The null values were dropped and there were no duplicate entries. The column 'male' was changed to 'sex' for clarity. This part of the preprocessing was done when the data was imported to the database.
 
 Given the difference in values  and that some features are continuous and some are categorical the data was standardized using *scikitlearn StandardScaler*.
 
@@ -97,12 +98,6 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 This is the first run at the data with this machine learning model. We will continue to explore and experiment with other models and compare our results to see which one works better for the problem we are trying to solve.
 
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
-
-The purpose of our capstone project is to determine whether the patients would be at risk of having Coronary Heart Disease (CHD) in the next 10 years based on the current lifestyle and health information. The outcome of the project is labeled as whether the person will or will not have a risk of having CHD. Moreover, we have a dataset that we can use to train the model to analyze data and identify the patterns and based on the patterns, make prediction on new data. As a result, we will be using the Supervised Machine Learning category. 
-
-Based on the learning, Supervised Machine Learning can be further divided into Regression and Classification models. Since outcome of this work is discrete, we will be utilizing the classification model and due to the fact that we are predicting the binary outcome, we will be utilizing the Logistic Regression.  
-
-For achieving the expected outcome, we will be utilizing the Scikit-learn machine leaning library for python. We will be utilizing multiple modules from Scikit-learn library which will be finalized during the course of this project. 
 
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
@@ -144,7 +139,8 @@ There is more prevalent hypertension amongst participants at risk of developing 
 - RDS Link for Spark:&nbsp;  <br/> jdbc:postgresql://dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject
 - Database connection for Python: <br/> conn = sa.create_engine('postgresql://root:postgres@dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject')
 
-finalFiles/Images/ERD.png
+![ERD](https://user-images.githubusercontent.com/104289098/193169397-cf9f2dcc-a0b3-43d9-b8c3-314ca9f2b017.png)
+
 
 ### - on AWS
 - __Create AWS RDS__
