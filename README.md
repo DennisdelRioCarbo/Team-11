@@ -97,6 +97,7 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 This is the first run at the data with this machine learning model. We will continue to explore and experiment with other models and compare our results to see which one works better for the problem we are trying to solve.
 
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
+
 The purpose of our capstone project is to determine whether the patients would be at risk of having Coronary Heart Disease (CHD) in the next 10 years based on the current lifestyle and health information. The outcome of the project is labeled as whether the person will or will not have a risk of having CHD. Moreover, we have a dataset that we can use to train the model to analyze data and identify the patterns and based on the patterns, make prediction on new data. As a result, we will be using the Supervised Machine Learning category. 
 
 Based on the learning, Supervised Machine Learning can be further divided into Regression and Classification models. Since outcome of this work is discrete, we will be utilizing the classification model and due to the fact that we are predicting the binary outcome, we will be utilizing the Logistic Regression.  
