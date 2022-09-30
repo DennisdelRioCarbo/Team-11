@@ -1,6 +1,3 @@
-
-
-
 # Team-11
 
 ## Presentation Link
@@ -59,9 +56,6 @@ https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resou
 
 ## Data Cleaning and Analysis
 Data cleaning is an essential step as it will dictate the flow of the entire project. It will allow for any step taken afterwards to be done efficiently. For our dataset, *Pandas* will be used to clean the data, to drop any unnecessary columns/rows. *Matplotlib* and *seaborn* for graphs and visualizations.
-
-## Database Storage
-The database was created on *AWS* and then linked to *postgresSQL*, which is the database we intend to use. Wel'll use *sqlalchemy* to connect and make queries to the database.
 
 ## Machine Learning
 - Refer to `framingham_ml.ipynb` file for code.
@@ -129,6 +123,7 @@ There is more prevalent hypertension amongst participants at risk of developing 
 
 ## Work Flow
 ## 1. Data and Database
+The database was created on *AWS* and then linked to *postgresSQL*, which is the database we intend to use. Wel'll use *sqlalchemy* to connect and make queries to the database.
 <br>
 
 - Raw dataset:&nbsp; [framingham.csv](finalFiles/framingham.csv)
