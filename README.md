@@ -100,47 +100,23 @@ https://public.tableau.com/app/profile/ankit.naik2727/viz/CapstoneProject_166432
 
 The dashboard creation process flow diagram will be as below.
 ### Data transformation steps
-•	Change column name “Male” to “Gender”
-    0 – Male
-    1 – Female
+•	Change column name “Male” to “Gender” -- 0 – Male, 1 – Female
 
-•	Create a column with age groups (5 years)   Eg. 31-35, 36-40….
+•	Create a column with age groups (5 years) -- Eg. 31-35, 36-40….
 
-•	Change values of Column Current Smoker
-    0	– Non-Smoker
-    1	– Smoker
+•	Change values of Column Current Smoker --  0 – Non-Smoker, 1 – Smoker
 
-•	Create a column with group of cigperday  (either 5 or 10)  Eg. 0-5, 6-10 or 0-10, 11-20
+•	Create a column with group of cigperday -- (either 5 or 10)  Eg. 0-5, 6-10 or 0-10, 11-20
 
-•	Change values of Column Diabetes
-    0– No Diabetes
-    1 – Diabetes
+•	Change values of Column Diabetes -- 0 – No Diabetes, 1 – Diabetes
 
-•	Create a column with cholesterol level groups
-    <200 – Desirable
-    200 - 239 – Borderline high
-    >240 High
+•	Create a column with cholesterol level groups -- <200 – Desirable, 200 - 239 – Borderline high, >240 High
 
-•	Create a column with systolic blood pressure level groups
-    <120 – Normal
-    120-129 – Elevated
-    130-139 Hypertension Stage 1
-    140-179 Hypertension Stage 2
-    >180 Hypertensive Crisis
+•	Create a column with systolic blood pressure level groups -- <120 – Normal, 120-129 – Elevated, 130-139 Hypertension Stage 1, 140-179 Hypertension Stage 2, >180 Hypertensive Crisis
 
-•	Create a column with diastolic level groups
-    <80 – Normal
-    80 – Elevated
-    81-89 Hypertension Stage 1
-    90-119 Hypertension Stage 2
-    >120 Hypertensive Crisis
+•	Create a column with diastolic level groups -- <80 – Normal, 80 – Elevated, 81-89 Hypertension Stage 1, 90-119 Hypertension Stage 2, >120 Hypertensive Crisis
 
-•	Create a column with BMI level groups
-    <18.5 – Underweight
-    18.5-24.9 – Healthy weight
-    25-29.9 Overweight
-    30-39.9 Obesity
-    >40 Class 3 Obesity
+•	Create a column with BMI level groups -- <18.5 – Underweight, 18.5-24.9 – Healthy weight, 25-29.9 Overweight, 30-39.9 Obesity, >40 Class 3 Obesity
 
 ## Data exploration
 The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns is distributed, and performed basic statistic exploration with pandas *.describe()* method. We also explored correlations and relationships  between the different features graphically. 
