@@ -99,6 +99,8 @@ For our dashboard and presentation we'll use *Tableau* and *Google slides*.
 https://public.tableau.com/app/profile/ankit.naik2727/viz/CapstoneProject_16643228593060/CHDbyAgeGroupandBMI
 
 The dashboard creation process flow diagram will be as below.
+![Tableau dashboard Process Diagram](https://user-images.githubusercontent.com/103617509/193188180-19bcf4f4-ccea-4216-b64e-cadad41364f2.png)
+
 ### Data transformation steps
 •	Change column name “Male” to “Gender” -- 0 – Male, 1 – Female
 
