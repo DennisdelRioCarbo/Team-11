@@ -120,6 +120,15 @@ The dashboard creation process flow diagram will be as below.
 
 •	Create a column with BMI level groups -- <18.5 – Underweight, 18.5-24.9 – Healthy weight, 25-29.9 Overweight, 30-39.9 Obesity, >40 Class 3 Obesity
 
+## Illustrative Visuals for Dashboards and Story
+•	Compare 10 years CHD data in different gender
+
+•	Use the above scenario to compare between age groups
+
+•	Define the effects of habits on different health issues
+
+•	Compare the effect of smoking habit, diabetes, cholesterol, blood pressure and BMI on 10 years CHD
+
 ## Data exploration
 The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns is distributed, and performed basic statistic exploration with pandas *.describe()* method. We also explored correlations and relationships  between the different features graphically. 
 Refer to `framingham_eda.ipynb` file for code and graphs. 
