@@ -98,7 +98,7 @@ Given the difference in values  and that some features are continuous and some a
 ### Preliminary feature engineering and feature selection
 The dataset contains two similar features, one of them is if the participant smokes *currentSmoker* and number of cigarettes per day *cigsPerDay* that the person smokes. *currenSmoker* is categorical (0=non-smoker or 1=smoker) and *cigsPerDay* is continuous (float64). If *currentSmoker* is 0, then *cigsPerDay* would be 0. These two features seemed to be redundant in the dataset so *currentSmoker* was dropped in favour of *cigsPerDay*  as it was considered that the number of smoked cigarettes per day could have more wight on the outcome.
 - Our target  is *TenYearCHD* which is the result of the Framingham risk score that determines whether a person is at risk of developing coronary heart disease in 10 years. The values of the target are categorical as int64 (0=is not at risk of developing  CHD in ten years/1=at risk of developing CHD in ten years).
-- The rest of the features are: *sex, age, education, currentSmoker, cigsPerDay, BPMeds, prevalentStroke, prevalentHyp, diabetes, totChol, sysBP, diaBP, BMI, heartRate* and *glucose*.
+- The rest of the features are: *sex, age, education, cigsPerDay, BPMeds, prevalentStroke, prevalentHyp, diabetes, totChol, sysBP, diaBP, BMI, heartRate* and *glucose*.
 
 ![image](https://user-images.githubusercontent.com/104289098/192667920-794bb7bd-c80a-417e-8d6a-baa11260ddbe.png)
 
