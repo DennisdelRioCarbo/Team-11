@@ -119,6 +119,12 @@ This is the first run at the data with this machine learning model. We will cont
 
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
 
+### Changes in model
+
+### Model Training
+
+### Current accuracy score
+
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
 ### Tableau Dashboard Link
