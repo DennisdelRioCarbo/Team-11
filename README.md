@@ -96,7 +96,7 @@ Given the difference in values  and that some features are continuous and some a
 ![image](https://user-images.githubusercontent.com/104289098/192667860-4c180af6-cc1b-4e11-bd4c-3d27b76429a2.png)
 
 ### Preliminary feature engineering and feature selection
-The dataset contains two similar features, one of them is if the participant smokes *currentSmoker* and number of cigarettes per day *cigsPerDay* that the person smokes. *currenSmoker* is categorical (0=non-smoker or 1=smoker) and *cigsPerDay* is continuous (float64). If *currentSmoker* is 0, then *cigsPerDay* would be 0. These two features seemed to be redundant in the dataset so *currentSmoker* was dropped in favour of *cigsPerDay*  as it was considered that the number of smoked cigarettes per day could have more wight on the outcome.
+The dataset contains two similar features, one of them is if the participant smokes *currentSmoker* and number of cigarettes per day *cigsPerDay* that the person smokes. *currenSmoker* is categorical (0=non-smoker or 1=smoker) and *cigsPerDay* is continuous (float64). If *currentSmoker* is 0, then *cigsPerDay* would be 0. These two features showed high correlation in the exploratory data analysis  so *currentSmoker* was dropped in favour of *cigsPerDay*.
 - Our target  is *TenYearCHD* which is the result of the Framingham risk score that determines whether a person is at risk of developing coronary heart disease in 10 years. The values of the target are categorical as int64 (0=is not at risk of developing  CHD in ten years/1=at risk of developing CHD in ten years).
 - The rest of the features are: *sex, age, education, cigsPerDay, BPMeds, prevalentStroke, prevalentHyp, diabetes, totChol, sysBP, diaBP, BMI, heartRate* and *glucose*.
 
@@ -120,10 +120,19 @@ This is the first run at the data with this machine learning model. We will cont
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
 
 ### Changes in model
+We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*.
+After running th *Balanced Random Forest Classifier* for the first time and checking the importances, we decided to drop the additional features as their importance value did not even reach 0.01: *prevalentStroke, BPMeds and diabetes*. 
 
-### Model Training
+ml_importances.png
+
+We also dropped a row containing an extreme outlier for the *totChol* feature to try to minimize disruption in the model.
+
+
+### Additional Model Training
+we retrained the original model (*Logistic Regression with Random Oversampling*) and also trained the other models using the feature engineering mentioned above.
 
 ### Current accuracy score
+So far the *accuracy score* has not been high with any of the models with 76% being the highest on the *Neural Network*. 
 
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
