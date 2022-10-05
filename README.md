@@ -162,8 +162,7 @@ The dashboard creation process flow diagram will be as below.
 •	Compare the effect of smoking habit, diabetes, cholesterol, blood pressure and BMI on 10 years CHD
   
 
-## 1. Data and Database
-## Work Flow
+## Data and Database
 
 The database was created on *AWS* and then linked to *postgresSQL*, which is the database we intend to use. Wel'll use *sqlalchemy* to connect and make queries to the database.
 <br>
