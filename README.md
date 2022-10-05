@@ -183,6 +183,8 @@ The database was created on *AWS* and then linked to *postgresSQL*, which is the
 - RDS Link for Spark:&nbsp;  <br/> jdbc:postgresql://dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject
 - Database connection for Python: <br/> conn = sa.create_engine('postgresql://root:postgres@dataanalyticsdb.cxnhjzyey4ka.us-east-2.rds.amazonaws.com:5432/coursefinalproject')
 
+https://user-images.githubusercontent.com/104289098/193169397-cf9f2dcc-a0b3-43d9-b8c3-314ca9f2b017.png
+
 ![ERD](https://github.com/DennisdelRioCarbo/Team-11/blob/3bf1b188dcfa0b32e5cddb008d54cbd8149a914b/finalFiles/Images/ERD.png)
 
 
