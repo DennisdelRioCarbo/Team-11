@@ -58,7 +58,7 @@ https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resou
 Data cleaning is an essential step as it will dictate the flow of the entire project. It will allow for any step taken afterwards to be done efficiently. For our dataset, *Pandas* will be used to clean the data, to drop any unnecessary columns/rows. *Matplotlib* and *seaborn* for graphs and visualizations.
 
 ## Data exploration
-The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns is distributed, and performed basic statistic exploration with pandas *.describe()* method. We also explored correlations and relationships  between the different features graphically. 
+The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns is distributed, and performed basic statistic exploration with pandas. We also explored correlations and relationships  between the different features graphically. 
 Refer to `framingham_eda.ipynb` file for code and graphs. 
 
 ## Data analysis
@@ -113,9 +113,7 @@ The data was split into training and testing sets using the *scikitlearn* module
 
 
 ### Model choice
-The first Machine Learning  model we chose is *Logistic Regression* as we are trying to predict a discrete binary outcome. Logistic regression is easier to implement, interpret, and very efficient to train. It can have good accuracy for many simple data sets and it performs well when the dataset is linearly separable. Although we believe *Logistic regression* might work in this case, *logistic regression* inherently runs on a linear model and there are other models available like *Naive Bayes* and *SVM* which could also prove useful.
-
-This is the first run at the data with this machine learning model. We will continue to explore and experiment with other models and compare our results to see which one works better for the problem we are trying to solve.
+The first Machine Learning  model we chose is *Logistic Regression* as we are trying to predict a discrete binary outcome. Logistic regression is easier to implement, interpret, and very efficient to train. It can have good accuracy for many simple data sets and it performs well when the dataset is linearly separable. Although we believe *Logistic regression* might work in this case, *logistic regression* inherently runs on a linear model and there are other models available which could also prove useful.
 
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
 
@@ -123,16 +121,16 @@ This is the first run at the data with this machine learning model. We will cont
 We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*.
 After running th *Balanced Random Forest Classifier* for the first time and checking the importances, we decided to drop the additional features as their importance value did not even reach 0.01: *prevalentStroke, BPMeds and diabetes*. 
 
-ml_importances.png
+![ml_importances](https://user-images.githubusercontent.com/104289098/193963789-c5209b1e-e928-4f51-875e-dce907210934.png)
 
 We also dropped a row containing an extreme outlier for the *totChol* feature to try to minimize disruption in the model.
-
 
 ### Additional Model Training
 we retrained the original model (*Logistic Regression with Random Oversampling*) and also trained the other models using the feature engineering mentioned above.
 
 ### Current accuracy score
-So far the *accuracy score* has not been high with any of the models with 76% being the highest on the *Neural Network*. 
+- So far the *accuracy score* has not been high with any of the models with 76% being the highest on the *Neural Network*. For the problem we are trying to solve we believe it is important to have a high recall for the *TenYearCHD class 1* (people who are at risk of developing coronary heart disease) as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. So far the models have had very low precision for the * class 1 target* which brings down the *f1* score. 
+- The highest recall score for the *class 1* so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling.
 
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
