@@ -4,6 +4,7 @@
 https://docs.google.com/presentation/d/18XLgKJ3PVczhViG3uts_fAbnepvY002qdzyHd9rh7xY/edit?usp=sharing
 
 ## Framingham App
+The app which helps people to see the risk of having heart disease in 10 years.
 [Estimation of 10 Year Cardiovascular Disease Risk App](https://mousavilaleh.github.io/framingham_test/)
 
 
