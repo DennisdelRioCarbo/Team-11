@@ -46,12 +46,6 @@ https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resou
 - Prediction of an individual developing heart disease within next 10 years based on the personal health and lifestyle information.
 - The prediction will help the medical professionals identifying the preventative measures to reduce the risk and educating patients on the risk if adequate care is not employed.
 
-## Communication Protocol
-- Slack Channel for Team 11
-- Email
-- Zoom meeting during virtual class time and office hours.
-- Git hub
-
 # Technologies Used
 
 ## Data Cleaning and Analysis
@@ -119,6 +113,8 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
 
 ### Changes in model
+- Refer to `framingham_ml2.ipynb` file.
+
 We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*.
 After running th *Balanced Random Forest Classifier* for the first time and checking the importances, we decided to drop the additional features as their importance value did not even reach 0.01: *prevalentStroke, BPMeds and diabetes*. 
 
@@ -128,7 +124,7 @@ After running th *Balanced Random Forest Classifier* for the first time and chec
 
 ![image](https://user-images.githubusercontent.com/104289098/194195089-fa93c25e-f7d7-4d62-94dc-e61d650888ae.png)
 
-### Additional Model Training. Refer to `framingham_ml2.ipynb` file.
+### Additional Model Training. 
 - We retrained the original model (*Logistic Regression with Random Oversampling*) and also trained the other models using the feature engineering mentioned above.
 
 ### Current accuracy score
