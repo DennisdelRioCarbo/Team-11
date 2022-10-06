@@ -1,11 +1,16 @@
 # Team-11
 
+## Data Source Link
+https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resource=download
+
 ## Presentation Link
 https://docs.google.com/presentation/d/18XLgKJ3PVczhViG3uts_fAbnepvY002qdzyHd9rh7xY/edit?usp=sharing
 
 ## Framingham App
 The link for the [Estimation of 10 Year Cardiovascular Disease Risk App](https://mousavilaleh.github.io/framingham_test/)
 
+## Tableau Dashboard Link
+https://public.tableau.com/app/profile/ankit.naik2727/viz/CapstoneProject_16643228593060/CHDbyAgeGroupandBMI
 
 # **Framingham 10 year risk of future (CHD) coronary heart disease.**
 
@@ -38,8 +43,6 @@ The features included in this dataset are:
 - *glucose* (float. glucose level)
 - *TenYearCHD* (0=no 10-year risk of CHD, 1=10-year risk of CHD)
 
-The dataset can be found here:
-https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resource=download
 
 ## Expected Outcome/Questions hoped to be answered by the data. 
 
@@ -145,8 +148,6 @@ After running th *Balanced Random Forest Classifier* for the first time and chec
 
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
-### Tableau Dashboard Link
-https://public.tableau.com/app/profile/ankit.naik2727/viz/CapstoneProject_16643228593060/CHDbyAgeGroupandBMI
 
 The dashboard creation process flow diagram will be as below.
 ![Tableau dashboard Process Diagram](https://user-images.githubusercontent.com/103617509/193188180-19bcf4f4-ccea-4216-b64e-cadad41364f2.png)
