@@ -46,12 +46,6 @@ https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resou
 - Prediction of an individual developing heart disease within next 10 years based on the personal health and lifestyle information.
 - The prediction will help the medical professionals identifying the preventative measures to reduce the risk and educating patients on the risk if adequate care is not employed.
 
-## Communication Protocol
-- Slack Channel for Team 11
-- Email
-- Zoom meeting during virtual class time and office hours.
-- Git hub
-
 # Technologies Used
 
 ## Data Cleaning and Analysis
@@ -119,19 +113,31 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
 
 ### Changes in model
+- Refer to `framingham_ml2.ipynb` file.
+
 We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*.
 After running th *Balanced Random Forest Classifier* for the first time and checking the importances, we decided to drop the additional features as their importance value did not even reach 0.01: *prevalentStroke, BPMeds and diabetes*. 
 
 ![ml_importances](https://user-images.githubusercontent.com/104289098/193963789-c5209b1e-e928-4f51-875e-dce907210934.png)
 
-We also dropped a row containing an extreme outlier for the *totChol* feature to try to minimize disruption in the model.
+- We also dropped a row containing an extreme outlier for the *totChol* feature to try to minimize disruption in the model.
 
-### Additional Model Training
-we retrained the original model (*Logistic Regression with Random Oversampling*) and also trained the other models using the feature engineering mentioned above.
+![image](https://user-images.githubusercontent.com/104289098/194195089-fa93c25e-f7d7-4d62-94dc-e61d650888ae.png)
+
+### Additional Model Training. 
+- We retrained the original model (*Logistic Regression with Random Oversampling*) and also trained the other models using the feature engineering mentioned above.
 
 ### Current accuracy score
-- So far the *accuracy score* has not been high with any of the models with 76% being the highest on the *Neural Network*. For the problem we are trying to solve we believe it is important to have a high recall for the *TenYearCHD class 1* (people who are at risk of developing coronary heart disease) as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. So far the models have had very low precision for the * class 1 target* which brings down the *f1* score. 
-- The highest recall score for the *class 1* so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling.
+- So far the highest *accuracy score* has been 76% being on the *Neural Network*. 
+
+![image](https://user-images.githubusercontent.com/104289098/194195397-88781c62-d309-4ef2-bbb1-36c4c9451f5c.png)
+
+
+- For the problem we are trying to solve we believe it is important to have a high recall for the *TenYearCHD class 1* (people who are at risk of developing coronary heart disease) as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the *class 1* so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. 
+- The precision for the *Logistic Regression* and *SMOTEEN* resampling was 22%. 
+
+![image](https://user-images.githubusercontent.com/104289098/194195490-4f9b4e2a-0705-4109-9913-bdfa548e0298.png)
+
 
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
