@@ -195,6 +195,8 @@ The database was created on *AWS* and then linked to *postgresSQL*, which is the
 
 ### - on AWS
 - __Create AWS RDS__
+
+### - on Postgres
 - __Connect database to postgreSQL__
 - __Create temp tables__ <br/>
   to avoid errors while importing data, we should make temp tables with only varchar data type for each field
