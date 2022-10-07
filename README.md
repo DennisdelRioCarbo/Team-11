@@ -55,14 +55,13 @@ The features included in this dataset are:
 
 # Technologies Used
 
-## Data Cleaning and Analysis
-Data cleaning is an essential step as it will dictate the flow of the entire project. It will allow for any step taken afterwards to be done efficiently. For our dataset, *Pandas* will be used to clean the data, to drop any unnecessary columns/rows. *Matplotlib* and *seaborn* for graphs and visualizations.
+## Exploratory Data Analysis
+- Refer to `framingham_eda.ipynb` file for code and graphs. 
 
-## Data exploration
-The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns is distributed, and performed basic statistic exploration with pandas. We also explored correlations and relationships  between the different features graphically. 
-Refer to `framingham_eda.ipynb` file for code and graphs. 
+- *Pandas* will be used to clean the data,  *Matplotlib* and *seaborn* for graphs and visualizations.
 
-## Data analysis
+-The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns are distributed, and performed basic statistic exploration. We also explored correlations and relationships  between the different features graphically. 
+
 After exploring and performing an initial analysis of the data, some of the findings are the following: 
 - **Age** The age of the individuals in the dataset ranges between 32 and 70 years old. With only one participant being 32 and one participant being 70 years old. Most participants are between 40 and 59 years old. The mean age is 49.5 years old.
 - **Sex** The dataset seems to be equally distributed among men and women. Out of the 3,658 participants there is a slight majority of women with 2,035 (55.6%) participants and 1,623 (44.4%) of men participants.
