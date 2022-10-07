@@ -126,8 +126,8 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 ### Changes in model
 - Refer to `framingham_ml2.ipynb` file.
 
-We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*.
-After running th *Balanced Random Forest Classifier* for the first time and checking the importances, we decided to drop the additional features as their importance value did not even reach 0.01: *prevalentStroke, BPMeds and diabetes*. 
+- We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*. We wanted to compare and experiment with different models to see how the different models would perform and try tro improve on the best performing model. 
+- After running the *Balanced Random Forest Classifier* for the first time and checking the importances, we decided to drop the additional features as their importance value did not even reach 0.01: *prevalentStroke, BPMeds and diabetes*. 
 
 ![ml_importances](https://user-images.githubusercontent.com/104289098/193963789-c5209b1e-e928-4f51-875e-dce907210934.png)
 
@@ -155,7 +155,13 @@ After running th *Balanced Random Forest Classifier* for the first time and chec
 
 ![image](https://user-images.githubusercontent.com/104289098/194195397-88781c62-d309-4ef2-bbb1-36c4c9451f5c.png)
 
-- For the problem we are trying to solve we believe it is important to have a high recall for the *TenYearCHD class 1* (people who are at risk of developing coronary heart disease) as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the *class 1* so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. 
+### Results
+- **class 1** People at risk of developing Cornary Heart Disease in the next ten years.
+- **class 2** People who are not at risk of developing CHD in ten years.
+- For the problem we are trying to solve we believe it is important to have a high recall for the **class 1** as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the **class 1** so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. However precision was 22%.
+- So far none of the models have had high presision (under 30%) for the target *class 1* which brings the f1 scores down for the class.
+- *Accuracy* has been above 50% for all different models.
+- All models seem to perform better to predict the **class 0** (individual who are not at risk of developing CHD in ten years) with *precision* above 90% *recall* above 60%  and *f1 scores* of 60% or more.  
  
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
