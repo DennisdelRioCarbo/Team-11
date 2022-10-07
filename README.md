@@ -56,11 +56,9 @@ The features included in this dataset are:
 # Technologies Used
 
 ## Exploratory Data Analysis
-- Refer to `framingham_eda.ipynb` file for code and graphs. 
+- Refer to `framingham_eda.ipynb` file for code and graphs. *Pandas* was used to clean the data,  *Matplotlib* and *seaborn* for graphs and visualizations.
 
-- *Pandas* will be used to clean the data,  *Matplotlib* and *seaborn* for graphs and visualizations.
-
--The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns are distributed, and performed basic statistic exploration. We also explored correlations and relationships  between the different features graphically. 
+The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns are distributed, and performed basic statistic exploration. We also explored correlations and relationships  between the different features graphically. 
 
 After exploring and performing an initial analysis of the data, some of the findings are the following: 
 - **Age** The age of the individuals in the dataset ranges between 32 and 70 years old. With only one participant being 32 and one participant being 70 years old. Most participants are between 40 and 59 years old. The mean age is 49.5 years old.
