@@ -119,6 +119,10 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
 
+#### Logistic Regression with Random Oversampling
+
+![image](https://user-images.githubusercontent.com/104289098/194445154-f5ffd806-c546-453b-a9dc-ee5b9b685d2c.png)
+
 ### Changes in model
 - Refer to `framingham_ml2.ipynb` file.
 
@@ -134,18 +138,25 @@ After running th *Balanced Random Forest Classifier* for the first time and chec
 ### Additional Model Training. 
 - We retrained the original model (*Logistic Regression with Random Oversampling*) and also trained the other models using the feature engineering mentioned above.
 
-### Current accuracy score
-- So far the highest *accuracy score* has been 76% being on the *Neural Network*. 
+### Current accuracy scores
+#### Logistic Regression with Random Oversampling 
 
-![image](https://user-images.githubusercontent.com/104289098/194195397-88781c62-d309-4ef2-bbb1-36c4c9451f5c.png)
+![image](https://user-images.githubusercontent.com/104289098/194445292-e0907ab9-c5f9-49b7-a0e0-198e6707e7fc.png)
 
-
-- For the problem we are trying to solve we believe it is important to have a high recall for the *TenYearCHD class 1* (people who are at risk of developing coronary heart disease) as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the *class 1* so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. 
-- The precision for the *Logistic Regression* and *SMOTEEN* resampling was 22%. 
+#### Logistic Regression with SMOTEENN
 
 ![image](https://user-images.githubusercontent.com/104289098/194195490-4f9b4e2a-0705-4109-9913-bdfa548e0298.png)
 
+#### Balanced Random Forest Classifier
 
+![image](https://user-images.githubusercontent.com/104289098/194445444-e58e457f-fdea-491d-9480-2a62e23dfaf5.png)
+
+#### Neural Network 
+
+![image](https://user-images.githubusercontent.com/104289098/194195397-88781c62-d309-4ef2-bbb1-36c4c9451f5c.png)
+
+- For the problem we are trying to solve we believe it is important to have a high recall for the *TenYearCHD class 1* (people who are at risk of developing coronary heart disease) as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the *class 1* so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. 
+ 
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
 
