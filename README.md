@@ -7,7 +7,7 @@ https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resou
 https://docs.google.com/presentation/d/18XLgKJ3PVczhViG3uts_fAbnepvY002qdzyHd9rh7xY/edit?usp=sharing
 
 ## Framingham App
-The link for the [Estimation of 10 Year Cardiovascular Disease Risk App](https://mousavilaleh.github.io/framingham_test/)
+[Estimation of 10 Year Cardiovascular Disease Risk App](https://mousavilaleh.github.io/framingham_test/)
 
 ## Tableau Dashboard Link
 https://public.tableau.com/app/profile/ankit.naik2727/viz/CapstoneProject_16643228593060/CHDbyAgeGroupandBMI
