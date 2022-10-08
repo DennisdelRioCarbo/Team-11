@@ -19,5 +19,11 @@ https://docs.google.com/presentation/d/18XLgKJ3PVczhViG3uts_fAbnepvY002qdzyHd9rh
 
 #### Slide 4:
 - Some of the risk factors include an unhealthy diet, physical inactivity, tobacco use and harmful use of alcohol
-
 - These factors lead to obesity and raised blood pressure, blood glucose, blood lipids 
+
+#### Slide 5:
+The questions we hope to answer include:
+- whether we can predict if certain individuals will develop coronary heart disease within the next 10 years given certain risk factors
+- What is the correlation between different risk factors associated with heart disease
+- How are the different risk factors correlated between males and females
+- Which factors have more weight in predicting coronary heart disease
