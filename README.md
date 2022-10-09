@@ -222,7 +222,7 @@ The database was created on *AWS* and then linked to *postgresSQL*, which is the
   ![tempTable.png](finalFiles/Images/tempTable.png)
   <br/>
   
-- __Create final tables with appropriate data types__
+- __Create main tables with appropriate data types__
 
   
   ![mainTable.png](finalFiles/Images/mainTable.png)
@@ -240,7 +240,7 @@ The database was created on *AWS* and then linked to *postgresSQL*, which is the
   ![checkPostgresData.png](finalFiles/Images/checkPostgresData.png)
   <br/>
   
-- __Clean and normalize data and copy into final table__
+- __Clean and normalize data and copy into main table__
 
   
   ![normalizeData1.png](finalFiles/Images/normalizeData1.png)
