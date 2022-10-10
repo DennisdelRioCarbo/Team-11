@@ -170,10 +170,11 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 ### Results
 - **class 1** People at risk of developing Cornary Heart Disease in the next ten years.
 - **class 2** People who are not at risk of developing CHD in ten years.
-- For the problem we are trying to solve we believe it is important to have a high recall for the **class 1** as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the **class 1** so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. However precision was 22%.
-- So far none of the models have had high presision (under 30%) for the target *class 1* which brings the f1 scores down for the class.
+- For the problem we are trying to solve we believe it is important to have a high recall for the **class 1** as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the **class 1** so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. However precision was 22% with an *accuracy* of 52%
+- So far none of the models have had high precision (under 30%) for the target *class 1* which brings the f1 scores down for the class.
 - *Accuracy* has been above 50% for all different models.
-- All models seem to perform better to predict the **class 0** (individual who are not at risk of developing CHD in ten years) with *precision* above 90% *recall* above 60%  and *f1 scores* of 60% or more.  
+- All models seem to perform better to predict the **class 0** (individual who are not at risk of developing CHD in ten years) with *precision* above 90% *recall* above 60%  and *f1 scores* of 60% or more.  This is somewhat to be expected given the imbalance in the data. 
+- More data would be needed to improve results and increase the *precision* for the **class 1** and the *recall* for the **class 0**.
  
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
