@@ -118,7 +118,13 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 
 #### Logistic Regression with Random Oversampling
 
+![image](https://user-images.githubusercontent.com/104289098/194897541-6bb2f4b1-917d-4011-b4d9-9dee882d1f55.png)
+
 ![image](https://user-images.githubusercontent.com/104289098/194445154-f5ffd806-c546-453b-a9dc-ee5b9b685d2c.png)
+
+- For the **class 1 (Predicted 1)** which is our target that predicts the *Ten Year Risk of developing CHD (TenYearCHD)* we have from the confusion matrix that out of the 139 positive cases (support), the model can accurately predict 95 of them (True positives) which gives us a *recall (TP/TP+FN)* of 68%. However the precision for the same class is 22% (TP/TP+FP) meaning that out of the 361 (TP+FP) cases that the model predicts as positives, only 95 of them are actually positives (TP). This is turn gives a *f1 score* of .38.
+- For the **class 0 (Predicted 0)** the *precision* is 92% (TN/TN+FN). That means that out of the 554 (TN+FN) cases that are being predicted as negative, only 510(TN) really are. The *recall (TN/TN+FP)* is 66% which means that out of the 776 negative cases (*support*) the model can accurately predict 510 of them (TN). This gives a *f1 score* of .77.
+
 
 ### Changes in model
 - Refer to `framingham_ml2.ipynb` file.
