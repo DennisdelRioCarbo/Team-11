@@ -134,6 +134,7 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 
 ![image](https://user-images.githubusercontent.com/104289098/194445154-f5ffd806-c546-453b-a9dc-ee5b9b685d2c.png)
 
+**Confusion matrix explanation** 
 - For the **class 1 (Predicted 1)** which is our target that predicts the *Ten Year Risk of developing CHD (TenYearCHD)* we have from the confusion matrix that out of the 139 positive cases (support), the model can accurately predict 95 of them (True positives) which gives us a *recall (TP/TP+FN)* of 68%. However the precision for the same class is 22% (TP/TP+FP) meaning that out of the 361 (TP+FP) cases that the model predicts as positives, only 95 of them are actually positives (TP). This is turn gives a *f1 score* of .38.
 - For the **class 0 (Predicted 0)** the *precision* is 92% (TN/TN+FN). That means that out of the 554 (TN+FN) cases that are being predicted as negative, only 510(TN) really are. The *recall (TN/TN+FP)* is 66% which means that out of the 776 negative cases (*support*) the model can accurately predict 510 of them (TN). This gives a *f1 score* of .77.
 - The *accuracy* of this model is 66% meaning that of the 915 instances (*support*) the model can accurately predict 605 (TN+TP).
