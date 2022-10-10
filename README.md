@@ -144,13 +144,19 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 ### Current accuracy scores
 #### Logistic Regression with Random Oversampling 
 
+![image](https://user-images.githubusercontent.com/104289098/194928081-7a3daf44-0b63-409c-b20a-6d11ccad5490.png)
+
 ![image](https://user-images.githubusercontent.com/104289098/194445292-e0907ab9-c5f9-49b7-a0e0-198e6707e7fc.png)
 
 #### Logistic Regression with SMOTEENN
 
+![image](https://user-images.githubusercontent.com/104289098/194928177-f004acbd-6a36-4394-8481-c62a098c3987.png)
+
 ![image](https://user-images.githubusercontent.com/104289098/194195490-4f9b4e2a-0705-4109-9913-bdfa548e0298.png)
 
 #### Balanced Random Forest Classifier
+
+![image](https://user-images.githubusercontent.com/104289098/194928252-4c4ac5d8-dc20-4d56-9636-59446b5886e0.png)
 
 ![image](https://user-images.githubusercontent.com/104289098/194445444-e58e457f-fdea-491d-9480-2a62e23dfaf5.png)
 
