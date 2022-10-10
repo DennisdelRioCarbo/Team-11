@@ -162,7 +162,9 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 
 #### Neural Network 
 
-![image](https://user-images.githubusercontent.com/104289098/194195397-88781c62-d309-4ef2-bbb1-36c4c9451f5c.png)
+![image](https://user-images.githubusercontent.com/104289098/194933270-ff6c615d-9e93-474e-8bf6-e2a482981b60.png)
+
+![image](https://user-images.githubusercontent.com/104289098/194933205-831617e5-0199-498c-b355-9c0af154fe73.png)
 
 ### Results
 - **class 1** People at risk of developing Cornary Heart Disease in the next ten years.
