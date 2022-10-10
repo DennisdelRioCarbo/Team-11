@@ -62,9 +62,21 @@ The data was imported from the database and displayed as a DataFrame using Panda
 
 After exploring and performing an initial analysis of the data, some of the findings are the following: 
 - **Age** The age of the individuals in the dataset ranges between 32 and 70 years old. With only one participant being 32 and one participant being 70 years old. Most participants are between 40 and 59 years old. The mean age is 49.5 years old.
+
+![image](https://user-images.githubusercontent.com/104289098/194935746-972b3481-96d8-4fd6-a5a1-e85c084616f3.png)
+
 - **Sex** The dataset seems to be equally distributed among men and women. Out of the 3,658 participants there is a slight majority of women with 2,035 (55.6%) participants and 1,623 (44.4%) of men participants.
+
+![image](https://user-images.githubusercontent.com/104289098/194935828-d327e4d1-2109-496c-9589-4694f9382e13.png)
+
 - **Distribution** Most continuous variables seem to show a normal distribution.  Total cholesterol (totChol), systolic blood pressure (sysBP), body mass index (BMI), heart rate (hearRate) and glucose (glucose) seem to present outliers.
+
+![image](https://user-images.githubusercontent.com/104289098/194935929-166394f3-4b9f-483c-a428-6ae45b512e3f.png)
+
  - **Correlation** The variables that show high correlation are systolic blood pressure (sysBP) and prevalent hypertension (prevalentHyp) which would be expected; the same goes for glucose and diabetes. The ten year coronary heart disease prediction does not show a high correlation with any of the variables.
+
+![image](https://user-images.githubusercontent.com/104289098/194935997-3fe77b07-2f3a-4d52-82a5-bbb06e15e3dc.png)
+
  - **Ten Year Coronary Heart Prediction (TenYearCHD)** Of the 3,658 participants 557 (15.2%) are predicted to develop coronary heart disease within ten years. Out of the 557 positively predicted, 250 of those are women and 307 are men.
 The risk of developing CHD within ten years is higher in people over 50 years old of both ages.
 - **Smoking (currentSmoker/cigsPerDay)** Of all 3,658 participants almost half of them (1,789 or 48.9%) are smokers against 1,869 (51.1%) of non smokers.
