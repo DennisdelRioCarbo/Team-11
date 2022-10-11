@@ -10,7 +10,7 @@ https://docs.google.com/presentation/d/18XLgKJ3PVczhViG3uts_fAbnepvY002qdzyHd9rh
 [Estimation of 10 Year Cardiovascular Disease Risk App](https://mousavilaleh.github.io/framingham_test/)
 
 ## Tableau Dashboard Link
-https://public.tableau.com/app/profile/ankit.naik2727/viz/CapstoneProject_16643228593060/CHDbyAgeGroupandBMI
+https://public.tableau.com/app/profile/ankit.naik2727/viz/CapstoneProject_16643228593060/Story1?publish=yes
 
 # **Framingham 10 year risk of future (CHD) coronary heart disease.**
 
