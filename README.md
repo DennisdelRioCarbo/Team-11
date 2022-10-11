@@ -181,7 +181,7 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 ![image](https://user-images.githubusercontent.com/104289098/194933205-831617e5-0199-498c-b355-9c0af154fe73.png)
 
 ### Results
-- **class 1** People at risk of developing Cornary Heart Disease in the next ten years.
+- **class 1** People at risk of developing Coronary Heart Disease in the next ten years.
 - **class 2** People who are not at risk of developing CHD in ten years.
 - For the problem we are trying to solve we believe it is important to have a high recall for the **class 1** as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the **class 1** so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. However precision was 22% with an *accuracy* of 52%
 - So far none of the models have had high precision (under 30%) for the target *class 1* which brings the f1 scores down for the class.
