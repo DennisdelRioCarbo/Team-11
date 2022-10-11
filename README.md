@@ -94,7 +94,5 @@ ex. &nbsp; plt.savefig('correlation_plot.png') <br/>
 
 
 
-https://user-images.githubusercontent.com/104289098/193169397-cf9f2dcc-a0b3-43d9-b8c3-314ca9f2b017.png
-
 
 
