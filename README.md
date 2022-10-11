@@ -143,7 +143,7 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 ### Changes in model
 - Refer to `framingham_ml2.ipynb` file.
 
-- We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*. We wanted to compare and experiment with different models to see how the different models would perform and try tro improve on the best performing model. 
+- We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*. We wanted to compare and experiment with different models to see how the different models would perform and try to improve on the best performing model. 
 - After running the *Balanced Random Forest Classifier* for the first time and checking the importances, we decided to drop the additional features as their importance value did not even reach 0.01: *prevalentStroke, BPMeds and diabetes*. 
 
 ![ml_importances](https://user-images.githubusercontent.com/104289098/193963789-c5209b1e-e928-4f51-875e-dce907210934.png)
