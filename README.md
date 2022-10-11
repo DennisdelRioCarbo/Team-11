@@ -1,7 +1,16 @@
 # Team-11
 
+## Data Source Link
+https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resource=download
+
 ## Presentation Link
 https://docs.google.com/presentation/d/18XLgKJ3PVczhViG3uts_fAbnepvY002qdzyHd9rh7xY/edit?usp=sharing
+
+## Framingham App
+[Estimation of 10 Year Cardiovascular Disease Risk App](https://mousavilaleh.github.io/framingham_test/)
+
+## Tableau Dashboard Link
+https://public.tableau.com/app/profile/ankit.naik2727/viz/CapstoneProject_16643228593060/CHDbyAgeGroupandBMI
 
 # **Framingham 10 year risk of future (CHD) coronary heart disease.**
 
@@ -34,8 +43,6 @@ The features included in this dataset are:
 - *glucose* (float. glucose level)
 - *TenYearCHD* (0=no 10-year risk of CHD, 1=10-year risk of CHD)
 
-The dataset can be found here:
-https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resource=download
 
 ## Expected Outcome/Questions hoped to be answered by the data. 
 
@@ -48,19 +55,28 @@ https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resou
 
 # Technologies Used
 
-## Data Cleaning and Analysis
-Data cleaning is an essential step as it will dictate the flow of the entire project. It will allow for any step taken afterwards to be done efficiently. For our dataset, *Pandas* will be used to clean the data, to drop any unnecessary columns/rows. *Matplotlib* and *seaborn* for graphs and visualizations.
+## Exploratory Data Analysis
+- Refer to `framingham_eda.ipynb` file for code and graphs. *Pandas* was used to clean the data,  *Matplotlib* and *seaborn* for graphs and visualizations.
 
-## Data exploration
-The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns is distributed, and performed basic statistic exploration with pandas. We also explored correlations and relationships  between the different features graphically. 
-Refer to `framingham_eda.ipynb` file for code and graphs. 
+The data was imported from the database and displayed as a DataFrame using Pandas. The dataset contained 3,658 rows and 16 columns. We explored the column names which are the ones mentioned previously and the data types which are either *float64* or *int64*. One of the column names was changed from “male” to “sex” when the data file was imported into the database as we thought it better represented the feature. We looked for null and duplicate values which we didn't find any. We then proceeded to explore graphically how the data in the different columns are distributed, and performed basic statistic exploration. We also explored correlations and relationships  between the different features graphically. 
 
-## Data analysis
 After exploring and performing an initial analysis of the data, some of the findings are the following: 
 - **Age** The age of the individuals in the dataset ranges between 32 and 70 years old. With only one participant being 32 and one participant being 70 years old. Most participants are between 40 and 59 years old. The mean age is 49.5 years old.
+
+![image](https://user-images.githubusercontent.com/104289098/194935746-972b3481-96d8-4fd6-a5a1-e85c084616f3.png)
+
 - **Sex** The dataset seems to be equally distributed among men and women. Out of the 3,658 participants there is a slight majority of women with 2,035 (55.6%) participants and 1,623 (44.4%) of men participants.
+
+![image](https://user-images.githubusercontent.com/104289098/194935828-d327e4d1-2109-496c-9589-4694f9382e13.png)
+
 - **Distribution** Most continuous variables seem to show a normal distribution.  Total cholesterol (totChol), systolic blood pressure (sysBP), body mass index (BMI), heart rate (hearRate) and glucose (glucose) seem to present outliers.
+
+![image](https://user-images.githubusercontent.com/104289098/194935929-166394f3-4b9f-483c-a428-6ae45b512e3f.png)
+
  - **Correlation** The variables that show high correlation are systolic blood pressure (sysBP) and prevalent hypertension (prevalentHyp) which would be expected; the same goes for glucose and diabetes. The ten year coronary heart disease prediction does not show a high correlation with any of the variables.
+
+![image](https://user-images.githubusercontent.com/104289098/194935997-3fe77b07-2f3a-4d52-82a5-bbb06e15e3dc.png)
+
  - **Ten Year Coronary Heart Prediction (TenYearCHD)** Of the 3,658 participants 557 (15.2%) are predicted to develop coronary heart disease within ten years. Out of the 557 positively predicted, 250 of those are women and 307 are men.
 The risk of developing CHD within ten years is higher in people over 50 years old of both ages.
 - **Smoking (currentSmoker/cigsPerDay)** Of all 3,658 participants almost half of them (1,789 or 48.9%) are smokers against 1,869 (51.1%) of non smokers.
@@ -112,11 +128,23 @@ The first Machine Learning  model we chose is *Logistic Regression* as we are tr
 
 ![image](https://user-images.githubusercontent.com/104289098/192915334-4e4201a8-8f3a-4eec-9a1e-3922d447b4e1.png)
 
+#### Logistic Regression with Random Oversampling
+
+![image](https://user-images.githubusercontent.com/104289098/194897541-6bb2f4b1-917d-4011-b4d9-9dee882d1f55.png)
+
+![image](https://user-images.githubusercontent.com/104289098/194445154-f5ffd806-c546-453b-a9dc-ee5b9b685d2c.png)
+
+**Confusion matrix explanation** 
+- For the **class 1 (Predicted 1)** which is our target that predicts the *Ten Year Risk of developing CHD (TenYearCHD)* we have from the confusion matrix that out of the 139 positive cases (support), the model can accurately predict 95 of them (True positives) which gives us a *recall (TP/TP+FN)* of 68%. However the precision for the same class is 22% (TP/TP+FP) meaning that out of the 361 (TP+FP) cases that the model predicts as positives, only 95 of them are actually positives (TP). This is turn gives a *f1 score* of .38.
+- For the **class 0 (Predicted 0)** the *precision* is 92% (TN/TN+FN). That means that out of the 554 (TN+FN) cases that are being predicted as negative, only 510(TN) really are. The *recall (TN/TN+FP)* is 66% which means that out of the 776 negative cases (*support*) the model can accurately predict 510 of them (TN). This gives a *f1 score* of .77.
+- The *accuracy* of this model is 66% meaning that of the 915 instances (*support*) the model can accurately predict 605 (TN+TP).
+
+
 ### Changes in model
 - Refer to `framingham_ml2.ipynb` file.
 
-We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*.
-After running th *Balanced Random Forest Classifier* for the first time and checking the importances, we decided to drop the additional features as their importance value did not even reach 0.01: *prevalentStroke, BPMeds and diabetes*. 
+- We compared the initial *Logistic Regression* where we resampled using *Random Oversampling* with three more models: *Logistic regression* with *SMOTEENN*, *Balanced Random Forest Classifier* and a *Neural Network*. We wanted to compare and experiment with different models to see how the different models would perform and try tro improve on the best performing model. 
+- After running the *Balanced Random Forest Classifier* for the first time and checking the importances, we decided to drop the additional features as their importance value did not even reach 0.01: *prevalentStroke, BPMeds and diabetes*. 
 
 ![ml_importances](https://user-images.githubusercontent.com/104289098/193963789-c5209b1e-e928-4f51-875e-dce907210934.png)
 
@@ -127,22 +155,42 @@ After running th *Balanced Random Forest Classifier* for the first time and chec
 ### Additional Model Training. 
 - We retrained the original model (*Logistic Regression with Random Oversampling*) and also trained the other models using the feature engineering mentioned above.
 
-### Current accuracy score
-- So far the highest *accuracy score* has been 76% being on the *Neural Network*. 
+### Current accuracy scores
+#### Logistic Regression with Random Oversampling 
 
-![image](https://user-images.githubusercontent.com/104289098/194195397-88781c62-d309-4ef2-bbb1-36c4c9451f5c.png)
+![image](https://user-images.githubusercontent.com/104289098/194928081-7a3daf44-0b63-409c-b20a-6d11ccad5490.png)
 
+![image](https://user-images.githubusercontent.com/104289098/194445292-e0907ab9-c5f9-49b7-a0e0-198e6707e7fc.png)
 
-- For the problem we are trying to solve we believe it is important to have a high recall for the *TenYearCHD class 1* (people who are at risk of developing coronary heart disease) as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the *class 1* so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. 
-- The precision for the *Logistic Regression* and *SMOTEEN* resampling was 22%. 
+#### Logistic Regression with SMOTEENN
+
+![image](https://user-images.githubusercontent.com/104289098/194928177-f004acbd-6a36-4394-8481-c62a098c3987.png)
 
 ![image](https://user-images.githubusercontent.com/104289098/194195490-4f9b4e2a-0705-4109-9913-bdfa548e0298.png)
 
+#### Balanced Random Forest Classifier
 
+![image](https://user-images.githubusercontent.com/104289098/194928252-4c4ac5d8-dc20-4d56-9636-59446b5886e0.png)
+
+![image](https://user-images.githubusercontent.com/104289098/194445444-e58e457f-fdea-491d-9480-2a62e23dfaf5.png)
+
+#### Neural Network 
+
+![image](https://user-images.githubusercontent.com/104289098/194933270-ff6c615d-9e93-474e-8bf6-e2a482981b60.png)
+
+![image](https://user-images.githubusercontent.com/104289098/194933205-831617e5-0199-498c-b355-9c0af154fe73.png)
+
+### Results
+- **class 1** People at risk of developing Cornary Heart Disease in the next ten years.
+- **class 2** People who are not at risk of developing CHD in ten years.
+- For the problem we are trying to solve we believe it is important to have a high recall for the **class 1** as it is important to detect all the individuals who might be at risk even if some of those predictions turn out to be wrong. The highest recall score for the **class 1** so far has been 84% using *Logistic Regression* using *SMOTEENN* for resampling. However precision was 22% with an *accuracy* of 52%
+- So far none of the models have had high precision (under 30%) for the target *class 1* which brings the f1 scores down for the class.
+- *Accuracy* has been above 50% for all different models.
+- All models seem to perform better to predict the **class 0** (individual who are not at risk of developing CHD in ten years) with *precision* above 90% *recall* above 60%  and *f1 scores* of 60% or more.  This is somewhat to be expected given the imbalance in the data. 
+- More data would be needed to improve results and increase the *precision* for the **class 1** and the *recall* for the **class 0**.
+ 
 ## Dashboard 
 For our dashboard and presentation we'll use *Tableau* and *Google slides*.
-### Tableau Dashboard Link
-https://public.tableau.com/app/profile/ankit.naik2727/viz/CapstoneProject_16643228593060/CHDbyAgeGroupandBMI
 
 The dashboard creation process flow diagram will be as below.
 ![Tableau dashboard Process Diagram](https://user-images.githubusercontent.com/103617509/193188180-19bcf4f4-ccea-4216-b64e-cadad41364f2.png)
@@ -195,13 +243,15 @@ The database was created on *AWS* and then linked to *postgresSQL*, which is the
 
 ### - on AWS
 - __Create AWS RDS__
+
+### - in Postgres
 - __Connect database to postgreSQL__
 - __Create temp tables__ <br/>
   to avoid errors while importing data, we should make temp tables with only varchar data type for each field
   ![tempTable.png](finalFiles/Images/tempTable.png)
   <br/>
   
-- __Create final tables with appropriate data types__
+- __Create main tables with appropriate data types__
 
   
   ![mainTable.png](finalFiles/Images/mainTable.png)
@@ -219,7 +269,7 @@ The database was created on *AWS* and then linked to *postgresSQL*, which is the
   ![checkPostgresData.png](finalFiles/Images/checkPostgresData.png)
   <br/>
   
-- __Clean and normalize data and copy into final table__
+- __Clean and normalize data and copy into main table__
 
   
   ![normalizeData1.png](finalFiles/Images/normalizeData1.png)
@@ -235,7 +285,7 @@ The database was created on *AWS* and then linked to *postgresSQL*, which is the
 <br/>
 
 
-### in Python
+### - in Python
 
 - __Read data in Jupyter Notebook and make a DataFrame__
 
