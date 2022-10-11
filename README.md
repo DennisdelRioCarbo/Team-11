@@ -27,3 +27,20 @@ The questions we hope to answer include:
 - What is the correlation between different risk factors associated with heart disease
 - How are the different risk factors correlated between males and females
 - Which factors have more weight in predicting coronary heart disease
+
+#### Slide 6:
+- We explored the column names which are the ones mentioned previously and the data types which are either float64 or int64
+- We looked for null and duplicate values which we didn't find any
+
+#### Slide 7: 
+- We then proceeded to explore graphically how the data in the different columns is distributed
+- We performed basic statistic exploration with pandas .describe() method
+
+#### Slide 8:
+- We also explored correlations and relationships between the different features graphically
+
+#### Slide 11:
+The first Machine Learning model we chose is Logistic Regression as we are trying to predict a discrete binary outcome. Logistic regression is easier to implement, interpret, and very efficient to train. It can have good accuracy for many simple data sets and it performs well when the dataset is linearly separable. Although we believe Logistic regression might work in this case, logistic regression inherently runs on a linear model and there are other models available which could also prove useful
+
+#### Slide 17:
+The task that the team member took at the beginning is what they continued with throughout the project. Instead, we should have stuck more to this kind of work distribution, where the tasks are shuffled 
