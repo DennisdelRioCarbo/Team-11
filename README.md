@@ -7,7 +7,7 @@ https://www.kaggle.com/datasets/aasheesh200/framingham-heart-study-dataset?resou
 https://docs.google.com/presentation/d/18XLgKJ3PVczhViG3uts_fAbnepvY002qdzyHd9rh7xY/edit?usp=sharing
 
 ## Framingham App
-This app will make complex calculations based on your entered data (age, sex, smoking status, treatment for hypertension, total cholesterol, HDL cholesterol and systolic blood pressure) and will give you the result. <br/> 
+This app will make complex calculations based on your entered data (age, sex, smoking status, treatment for hypertension, total cholesterol, HDL cholesterol and systolic blood pressure) and will give you the result. <br/> This app will not collect data from individuals.
 [Estimation of 10 Year Cardiovascular Disease Risk App](https://mousavilaleh.github.io/framingham_test/)
 
 ## Tableau Dashboard Link
