@@ -70,5 +70,8 @@ The Dataset Journey:
 #### Slide 21:
 The first Machine Learning model we chose is Logistic Regression as we are trying to predict a discrete binary outcome. Logistic regression is easier to implement, interpret, and very efficient to train. It can have good accuracy for many simple data sets and it performs well when the dataset is linearly separable. Although we believe Logistic regression might work in this case, logistic regression inherently runs on a linear model and there are other models available which could also prove useful
 
+#### Slide 25:
+Some recommendations for a future analysis would be to aquire more data and to get more information on how important each feature is, to get a more accurate model
+
 #### Slide 26:
 The task that the team member took at the beginning is what they continued with throughout the project. Instead, we should have stuck more to this kind of work distribution, where the tasks are shuffled 
