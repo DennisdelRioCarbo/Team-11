@@ -27,22 +27,18 @@ The questions we hope to answer include:
 - Which factors have more weight in predicting coronary heart disease
 
 #### Slide 6:
-The technolgies, languages, tools & alhorithms used:
-- Machine Learning:
-    - AWS connected to postgressql using sqlalchemy 
-    - Standardized using scikitlearn StandardScaler
-    - RandomOverSampler from imblearn library
-    - Scikit module test_train_split
+The technolgies, languages, tools & alhorithms used include:
+- Machine Learning using various libraries
     
-- Data Cleaning & Analysis:
+- The Data Cleaning & Analysis was done using:
     - Pandas
     - Matplotlib
     - Seaborn
 
-- Dashboard:
+- The Dashboard we used is:
     - Tableau
     
-- Model Choice:
+- And the Model Choice was:
     - Logistic Regression
 
 #### Slide 7:
