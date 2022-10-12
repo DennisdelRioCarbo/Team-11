@@ -70,4 +70,4 @@ The first Machine Learning model we chose is Logistic Regression as we are tryin
 Some recommendations for a future analysis would be to acquire more data and to get more information on how important each feature is, to get a more accurate model
 
 #### Slide 26:
-The task that the team member took at the beginning is what they continued with throughout the project. Instead, we should have stuck more to this kind of work distribution, where the tasks are shuffled 
+What the team would have differently would be that we continued with the task we took at the begininng and continued throughout the project with it, instead we should have stuck to a more shuffled work distribution
