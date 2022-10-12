@@ -11,8 +11,6 @@ https://docs.google.com/presentation/d/18XLgKJ3PVczhViG3uts_fAbnepvY002qdzyHd9rh
 
 - A number of factors, individually or in combination, can lead to heart disease, namely: high blood pressure, high blood cholesterol, and smoking are key risk factors for heart disease. About 47% of people in the United States have at least one of these three risk factors. Several other medical conditions and lifestyle choices can also put people at a higher risk for heart disease, including: diabetes, obesity, an unhealthy diet, diets rich in saturated fat, physical inactivity, excessive alcohol use, stress and a family history of heart disease
 
-- Men are generally more likely to develop heart disease. An increasing number of women are experiencing heart disease but they are under-diagnosed. For both sexes, the risk of heart disease increases with age.
-
 #### Slide 3:
 - The Framingham risk score test is used to estimate the 10-year cardiovascular risk of an individual, using data from about 11,600 patients
 - Majority of the patients were at low risk, but there were 16% who were intermediate risk and 3% at high risk, with majority of the high risk being men
