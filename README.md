@@ -41,31 +41,6 @@ The technologies, languages, tools & algorithms used include:
 - And the Model Choice was:
     - Logistic Regression
 
-#### Slide 7:
-The Dataset Journey:
-- Create AWS RDS
-- Connect RDS to PostgreSQL
-- Create temp and main tables
-- Import csv files into temp tables
-- Check data imported properly
-- Clean and normalize data
-- Copy clean data into main tables
-- Join two tables, copy into a view 
-- Read view in Python, make a DF
-- Remove records with null values
-- Copy clean dataset into a table on AWS
-
-#### Slide 17:
-- We explored the column names which are the ones mentioned previously and the data types which are either float64 or int64
-- We looked for null and duplicate values which we didn't find any
-
-#### Slide 18: 
-- We then proceeded to explore graphically how the data in the different columns is distributed
-- We performed basic statistic exploration with pandas .describe() method
-
-#### Slide 21:
-The first Machine Learning model we chose is Logistic Regression as we are trying to predict a discrete binary outcome. Logistic regression is easier to implement, interpret, and very efficient to train. It can have good accuracy for many simple data sets and it performs well when the dataset is linearly separable. Although we believe Logistic regression might work in this case, logistic regression inherently runs on a linear model and there are other models available which could also prove useful
-
 #### Slide 25:
 Some recommendations for a future analysis would be to acquire more data and to get more information on how important each feature is, to get a more accurate model
 
