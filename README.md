@@ -27,7 +27,7 @@ The questions we hope to answer include:
 - Which factors have more weight in predicting coronary heart disease
 
 #### Slide 6:
-The technolgies, languages, tools & alhorithms used include:
+The technologies, languages, tools & algorithms used include:
 - Machine Learning using various libraries
     
 - The Data Cleaning & Analysis was done using:
