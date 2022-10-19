@@ -101,7 +101,6 @@ ex. &nbsp; plt.savefig('correlation_plot.png') <br/>
 ## Framingham App
 
 https://mousavilaleh.github.io/framingham_test/
-
 <br/>
 An app to estimate 10-year cardiovascular disease risk with JavaScript, HTML and VuetiFu. <br/>
 The Framingham app will make complex calculations based on your entered data (age, sex, smoking status, treatment for hypertension, total cholesterol, HDL cholesterol and systolic blood pressure) and will give you the result.
